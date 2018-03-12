@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppWrapperComponent } from './app-wrapper/app-wrapper.component';
 import { PageNotFoundComponent } from './common/page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
+import { DownloadsComponent } from './downloads/downloads.component';
 
 import { DashboardHomeComponent } from './dashboard/dashboard-home/dashboard-home.component';
 
@@ -18,6 +19,8 @@ const appRoutes: Routes = [
   },
   { path: 'dashboard', redirectTo: '', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'downloads', component: DownloadsComponent },
+  { path: 'download', redirectTo: 'downloads', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];
 

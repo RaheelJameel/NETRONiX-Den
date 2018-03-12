@@ -9,6 +9,7 @@ import { NetronixDenCommonModule } from './common/netronix-den-common.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppWrapperComponent } from './app-wrapper/app-wrapper.component';
 import { LoginComponent } from './login/login.component';
+import { DownloadsComponent } from './downloads/downloads.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { LoginComponent } from './login/login.component';
     AppComponent,
     AppWrapperComponent,
     LoginComponent,
+    DownloadsComponent,
   ],
   imports: [
     BrowserModule,
