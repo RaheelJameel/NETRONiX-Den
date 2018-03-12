@@ -4,15 +4,22 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { NetronixDenCommonModule } from './common/netronix-den-common.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NetronixDenCommonModule,
+    DashboardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+  ],
 })
 export class AppModule { }
